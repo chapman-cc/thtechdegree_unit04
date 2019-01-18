@@ -1,0 +1,48 @@
+// ----- Base input and textarea ----------
+// ----------
+@mixin label-mixin {
+    color: $color-1-light20;
+    font-family: $font-stack-serif;
+    font-size: 0.8em;
+    margin: 1em 0 0.2em;
+    @content;
+}
+@mixin input-mixin {
+    background-color: rgba($color-1-light50, 0.3);
+    border-style: hidden;
+    border-radius: 10px;
+    padding: 1em;
+    transition: background 500ms ease-out;
+
+    &::placeholder {
+        color: $color-1-gray;
+        text-align: left;
+        font: oblique 0.8em $font-stack-serif;
+    }
+    &[Required]::placeholder {
+        text-align: right;
+    }
+
+    &:focus {
+        background-color: rgba($color-1-light50, 1);
+    }
+    @content;
+}
+@mixin button-mixin ($butt-color: $color-2) {
+    display: block;
+    height: 3em;
+    border-style: hidden;
+    border-radius: 10px;
+    font-family: $font-stack-serif;
+    letter-spacing: 0.3em;
+    color: $white;
+    background-color: $butt-color;
+    transition: background 1s ease-out;
+    &:hover {
+        background-color: darken($butt-color, 20%);
+    }
+    &:active {
+        background-color: darken($butt-color, 30%);
+    }
+    @content
+}
