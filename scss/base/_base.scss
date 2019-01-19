@@ -4,26 +4,13 @@
 
 * {
     box-sizing: border-box;
-}
-
-body {
-    font-size: 1rem;
-    line-height: 1.5;
-    font-family: $font-stack-sansserif;
-    text-align: left;
-    min-width: 360px;
-}
-
-h1,
-h2 {
     font-family: $font-stack-serif;
 }
 
-a {
-    color: null;
-    text-decoration: none;
+ul {
 
-    &:hover {
-        color: null;
-    }
+}
+
+p {
+    
 }

@@ -1,12 +1,16 @@
-// =========================================
-//  Mixins
-// =========================================
+/*---------------------------------
+Mixins
+---------------------------------*/
 @mixin center-container($percent: 90%) {
     width: $percent;
     max-width: 720px;
     margin: 0 auto;
     @content;
-}
+};
+
+
+
+// ----- Flexbox
 @mixin flexy ($wrap: wrap, $direction: row, $justify: center, $align: center) {
     display: flex;
     flex-wrap: $wrap;
@@ -14,13 +18,21 @@
     justify-content: $justify;
     align-items: $align;
     @content
-}
+};
 
+
+
+
+// ----- Media Queries
 @mixin mq($break) {
     @if $break == 'tablet' {
-        @media only screen and (min-width: 768px) {@content;}
-    }
-    @else if $break == 'desktop' {
-        @media only screen and (min-width: 1024) {@content;}
+        @media only screen and (min-width: 768px) {
+            @content;
+        }
+    } @else
+    if $break == 'desktop' {
+        @media only screen and (min-width: 1024) {
+            @content;
         }
     }
+}
