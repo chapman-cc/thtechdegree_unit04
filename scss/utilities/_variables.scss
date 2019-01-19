@@ -24,6 +24,7 @@ $color-3: #003366;
 
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,700');
-$font-stack-sansserif: Verdana,Geneva,sans-serif;
-$font-stack-serif: "Merriweather", Georgia,serif;
+
+$font-stack-sansserif: Helvetica, Verdana, sans-serif;
+$font-stack-serif: Georgia, TimesNewRoman, serif;
+$font-stack-mono: "Courier New", Courier, monospace;
