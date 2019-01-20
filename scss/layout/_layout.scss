@@ -1,0 +1,12 @@
+.container {
+    @include center-container;
+    // @include flexy(column, $align: stretch);
+}
+/* -------------------------------------------
+Header
+-------------------------------------------*/
+
+.img--logo {
+    display: block;
+    margin: 1em auto;
+}
