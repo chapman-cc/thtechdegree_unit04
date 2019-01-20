@@ -11,7 +11,7 @@ Mixins
 
 
 // ----- Flexbox
-@mixin flexy ($wrap: wrap, $direction: row, $justify: center, $align: center) {
+@mixin flexy ($direction: row, $wrap: wrap, $justify: center, $align: center) {
     display: flex;
     flex-wrap: $wrap;
     flex-direction: $direction;
