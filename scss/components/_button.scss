@@ -1,13 +1,32 @@
-.btn {
-    &--default {
-        display: block;
-        width: 100%;
-        padding: 1em 0;
-        border: none;
-        border-radius: 5px;
-        color: $white;
+/* -------------------------------------------
+BUTTONS
+-------------------------------------------*/
+
+.btn-- {
+    &default {
+        @extend %btn;
         background-color: $aqua;
-        font-size: 0.8em;
-        text-transform: uppercase;
+    }
+
+    &success {
+        @extend %btn;
+        background: $emerald;
+    }
+
+    &error {
+        @extend %btn;
+        background-color: $sunglo;
+    }
+
+    &warning {
+        @extend %btn;
+        background-color: $coral;
+    }
+
+    &info {
+        @extend %btn;
+        background-color: $purple-mountain-majesty;
     }
 }
+
+.theme__colors {}

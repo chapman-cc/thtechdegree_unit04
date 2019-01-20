@@ -1,8 +1,25 @@
 /*-------------------------------------------
 PLACEHOLDERS
 ------------------------------------------- */
-
 // ------ Links
 // ------ Images
+
+%img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 // ------ Headlines
 // ------ Nav items
+
+%btn {
+    display: inline-block;
+    width: 100%;
+    padding: 1em 0;
+    border: none;
+    border-radius: 5px;
+    color: $white;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
