@@ -1,6 +1,7 @@
 /* -------------------------------------------
 TEXT Styling
 ------------------------------------------- */
+
 .headline-- {
     &primary {
         color: $color-1-dark;
@@ -17,9 +18,8 @@ TEXT Styling
 // hyperlink in text styling
 
 .link {
-    text-decoration: none;
+    @extend %link;
     font-weight: bold;
-    color: $aqua;
 }
 // a block of quotes
 
