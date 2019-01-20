@@ -1,0 +1,13 @@
+.btn {
+    &--default {
+        display: block;
+        width: 100%;
+        padding: 1em 0;
+        border: none;
+        border-radius: 5px;
+        color: $white;
+        background-color: $aqua;
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+}
