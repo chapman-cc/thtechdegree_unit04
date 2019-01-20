@@ -1,7 +1,9 @@
 // ======================================
 //  Variables
 // ======================================
-// Colors
+/* -------------------------------------------
+Colors
+-------------------------------------------*/
 $white: #fff;
 $silver: #C0C0C0;
 $black: #000;
@@ -10,15 +12,24 @@ $aquamarine: #7fffd4;
 $emerald: #63cc82;
 $sunglo: #e4757a;
 $coral: #fd7856;
-$purple-mountain-majesty: #927bc1; /* -------------------------------------------
-color 1 and alteration */
+$purple-mountain-majesty: #927bc1;
+// color 1 and alteration
 $color-1: $aquamarine;
 $color-1-light: lighten($color-1, 25);
 $color-1-dark: darken($color-1, 25);
 $color-1-gray: grayscale($color-1);
 $color-1-complement: complement($color-1);
 $color-1-invert: invert($color-1);
-// Fonts
+/* -------------------------------------------
+Fonts
+-------------------------------------------*/
 $font-stack-sansserif: Helvetica, Verdana, sans-serif;
 $font-stack-serif: Georgia, TimesNewRoman, serif;
 $font-stack-mono: "Courier New", Courier, monospace;
+/* -------------------------------------------
+Breakpoints
+-------------------------------------------*/
+$bp-small: 768px;
+$bp-middle: 768px;
+$bp-big: 1024px;
+$bp-wide: 3440px;
