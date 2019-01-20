@@ -5,7 +5,7 @@ BUTTONS
 .btn-- {
     &default {
         @extend %btn;
-        background-color: $aqua;
+        background-color: $color-2;
     }
 
     &success {
