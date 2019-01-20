@@ -1,0 +1,33 @@
+/* -------------------------------------------
+TEXT Styling
+------------------------------------------- */
+.headline-- {
+    &primary {
+        color: $color-1-dark;
+        letter-spacing: -2px;
+        margin-left: 0.5em;
+    }
+
+    &secondary {
+        color: $color-1-gray;
+        font-weight: normal;
+        margin-left: 0.5em;
+    }
+}
+// hyperlink in text styling
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+    color: $aqua;
+}
+// a block of quotes
+
+.blockquote {
+    font-style: oblique;
+    font-size: 1.4em;
+    color: $color-1-gray;
+    padding-left: 1em;
+    border-left: 0.5em solid $color-1-dark;
+    border-radius: 10px;
+}

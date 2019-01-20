@@ -1,12 +1,27 @@
 .container {
-    @include center-container;
+    @include center-container(88%);
     // @include flexy(column, $align: stretch);
 }
 /* -------------------------------------------
 Header
 -------------------------------------------*/
 
+.grid__row {
+    margin-bottom: 4em;
+}
+
 .img--logo {
     display: block;
-    margin: 1em auto;
+    margin: 2em auto;
+}
+/* -------------------------------------------
+Sections
+-------------------------------------------*/
+.card {
+    margin-bottom: 4em;
+}
+
+.img--avatar {
+    display: block;
+    margin: 0 auto;
 }
