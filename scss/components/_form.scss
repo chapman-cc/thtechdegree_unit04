@@ -19,6 +19,7 @@
         text-align: left;
         font: oblique 0.8em $font-stack-serif;
     }
+
     &[Required]::placeholder {
         text-align: right;
     }
@@ -28,21 +29,30 @@
     }
     @content;
 }
-@mixin button-mixin ($butt-color: $color-2) {
+
+.btn--default {
     display: block;
-    height: 3em;
-    border-style: hidden;
-    border-radius: 10px;
-    font-family: $font-stack-serif;
-    letter-spacing: 0.3em;
+    width: 100%;
+    padding: 1em 0;
+    border: none;
+    border-radius: 5px;
     color: $white;
-    background-color: $butt-color;
-    transition: background 1s ease-out;
-    &:hover {
-        background-color: darken($butt-color, 20%);
-    }
-    &:active {
-        background-color: darken($butt-color, 30%);
-    }
-    @content
+    background-color: $aqua;
+    font-size: 0.8em;
+    text-transform: uppercase;
 }
+// display: block;
+// height: 3em;
+// border-style: hidden;
+// border-radius: 10px;
+// font-family: $font-stack-serif;
+// letter-spacing: 0.3em;
+// color: $white;
+// background-color: $butt-color;
+// transition: background 1s ease-out;
+// &:hover {
+//     background-color: darken($butt-color, 20%);
+// }
+// &:active {
+//     background-color: darken($butt-color, 30%);
+// }
