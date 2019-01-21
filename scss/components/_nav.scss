@@ -1,0 +1,21 @@
+/* -------------------------------------------
+Navigation bar Styling
+------------------------------------------- */
+
+.nav {
+    &__item a {
+        display: block;
+        padding: 1em 0;
+        text-decoration: none;
+        text-align: center;
+        color: $black;
+        border-radius: 10px;
+        // TODO: add transition to hover and active
+        &:active,
+        &:hover {
+            color: $white;
+            font-weight: bold;
+            background-color: $color-primary;
+        }
+    }
+}
