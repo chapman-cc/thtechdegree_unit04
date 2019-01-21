@@ -1,31 +1,10 @@
 /* -------------------------------------------
 BUTTONS
 -------------------------------------------*/
-
-.btn-- {
-    &default {
+@each $theme, $color in $themes {
+    .btn--#{$theme} {
         @extend %btn;
-        background-color: $color-2;
-    }
-
-    &success {
-        @extend %btn;
-        background: $emerald;
-    }
-
-    &error {
-        @extend %btn;
-        background-color: $sunglo;
-    }
-
-    &warning {
-        @extend %btn;
-        background-color: $coral;
-    }
-
-    &info {
-        @extend %btn;
-        background-color: $purple-mountain-majesty;
+        background-color: $color;
     }
 }
 
