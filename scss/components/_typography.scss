@@ -4,15 +4,11 @@ TEXT Styling
 
 .headline-- {
     &primary {
-        color: $black;
-        letter-spacing: -2px;
-        margin-left: 0.5em;
+        @extend %hdln-prim;
     }
 
     &secondary {
-        color: $silver;
-        font-weight: normal;
-        margin-left: 0.5em;
+        @extend %hdln-sec;
     }
 }
 // hyperlink in text styling
