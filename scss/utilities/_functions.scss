@@ -1,3 +1,11 @@
 // ======================================
 //  Functions
 // ======================================
+
+@function em($target, $context: $base__font-size) {
+    @return ($target / $context) * 1em    ;
+}
+
+@function theme($theme) {
+    @return map-get($themes, $theme);
+}
