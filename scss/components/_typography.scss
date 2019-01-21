@@ -4,13 +4,13 @@ TEXT Styling
 
 .headline-- {
     &primary {
-        color: $color-1-dark;
+        color: $black;
         letter-spacing: -2px;
         margin-left: 0.5em;
     }
 
     &secondary {
-        color: $color-1-gray;
+        color: $silver;
         font-weight: normal;
         margin-left: 0.5em;
     }
@@ -26,8 +26,8 @@ TEXT Styling
 .blockquote {
     font-style: oblique;
     font-size: 1.4em;
-    color: $color-1-gray;
+    color: $silver;
     padding-left: 1em;
-    border-left: 0.5em solid $color-1-dark;
+    border-left: 0.5em solid $color-primary;
     border-radius: 10px;
 }
