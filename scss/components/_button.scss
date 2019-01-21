@@ -1,6 +1,7 @@
 /* -------------------------------------------
 BUTTONS
 -------------------------------------------*/
+// this set each .btn-- class to the theme they associate with in $themes map
 @each $theme, $color in $themes {
     .btn--#{$theme} {
         @extend %btn;
