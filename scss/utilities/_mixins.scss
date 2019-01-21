@@ -25,13 +25,16 @@ Mixins
 // ----- Media Queries
 @mixin mq($break) {
     @if $break == 'tablet' {
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: map-get($breakpoints, small) + 1px) {
             @content;
         }
-    } @else
-    if $break == 'desktop' {
-        @media only screen and (min-width: 1024) {
+    }
+    @else if $break == 'desktop' {
+        @media only screen and (min-width: map-get($breakpoints, middle) + 1px) {
             @content;
         }
+    }
+    @else {
+        @error "Invalid breakpoints: #{$break}"
     }
 }
