@@ -3,6 +3,9 @@
 // -------------------------------------------
 
 .nav {
+    @include mq(middle) {
+        @include flexy;
+    };
     &__item a {
         @extend %btn-round-box;
         color: $black;
