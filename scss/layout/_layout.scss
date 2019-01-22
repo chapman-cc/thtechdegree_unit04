@@ -1,19 +1,10 @@
 .container {
-    @include center-container(88%);
+    @include center-container;
+    @include mq(middle) {
+        max-width: 1024px;
+    };
     // @include flexy(column, $align: stretch);
 }
-// -------------------------------------------
-Header
-// -------------------------------------------
-
-.grid__row {
-    margin-bottom: 4em;
-}
-
-
-// -------------------------------------------
-Sections
-// -------------------------------------------
-.card {
-    margin-bottom: 4em;
+.centered {
+    margin: 0 auto;
 }
