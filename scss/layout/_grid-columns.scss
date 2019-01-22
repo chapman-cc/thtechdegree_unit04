@@ -14,3 +14,13 @@
         }
     }
 };
+
+[class^="grid__col--"] {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.grid__row {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
