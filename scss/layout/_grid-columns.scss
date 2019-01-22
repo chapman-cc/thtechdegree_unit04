@@ -1,7 +1,7 @@
 // ========================================
 // GRID IMPORTS
 // ========================================
-@include mq(tablet) {
+@include mq(middle) {
     .grid__row {
         @include flexy($justify: space-between);
     }
@@ -16,7 +16,6 @@
 };
 
 [class^="grid__col--"] {
-    margin-top: 1em;
     margin-bottom: 1em;
 }
 
