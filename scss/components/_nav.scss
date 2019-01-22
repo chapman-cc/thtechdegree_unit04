@@ -3,15 +3,13 @@
 // -------------------------------------------
 
 .nav {
-    &__item a {
-        display: block;
-        padding: 1em 0;
-        text-decoration: none;
-        text-align: center;
+    &__item a{
+        @extend %btn-round-box;
         color: $black;
-        border-radius: 10px;
-        // TODO: add transition to hover and active
-        &:active,
+
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
         &:hover {
             color: $white;
             font-weight: bold;
