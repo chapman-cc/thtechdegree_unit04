@@ -1,5 +1,5 @@
 // -------------------------------------------
-TEXT Styling
+// TEXT Styling
 // -------------------------------------------
 
 .headline-- {
@@ -15,7 +15,6 @@ TEXT Styling
 
 .link {
     @extend %link;
-    font-weight: bold;
 }
 // a block of quotes
 
@@ -23,7 +22,7 @@ TEXT Styling
     font-style: oblique;
     font-size: 1.4em;
     color: $silver;
-    padding-left: 1em;
-    border-left: 0.5em solid $color-primary;
+    padding-left: em(10px);
+    border-left: em(8px) solid $color-primary;
     border-radius: 10px;
 }
