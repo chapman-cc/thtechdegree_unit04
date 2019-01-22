@@ -3,16 +3,26 @@
 // ========================================
 
 .grid {
+    &__row {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
     @include mq(middle) {
         &__row {
             @include flexy($justify: space-between);
         }
         @for $i from 1 through $g-col-count {
-            $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
-            $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+            @if $i == $g-col-count {
+                &__col--#{$i} {
+                    width: 100%;
+                }
+            } @else {
+                $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
+                $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
 
-            &__col--#{$i} {
-                width: percentage($target / $context);
+                &__col--#{$i} {
+                    width: percentage($target / $context);
+                }
             }
         }
     }
@@ -21,11 +31,5 @@
 
 [class^="grid__col--"].theme__colors {
     @extend %btn-round-box;
-    background-color: $color-primary;
     text-align: center;
-}
-
-.grid__row {
-    margin-top: 2em;
-    margin-bottom: 2em;
 }
