@@ -7,6 +7,11 @@
         margin-top: 2em;
         margin-bottom: 2em;
     }
+    @at-root [class^="grid__col"].theme__colors {
+        @extend %btn-round-box;
+        text-align: center;
+    }
+
     @include mq(middle) {
         &__row {
             @include flexy($justify: space-between);
@@ -28,8 +33,8 @@
     }
 }
 // the following style display the overall styling for the gird, not the size in flex;
-
-[class^="grid__col--"].theme__colors {
-    @extend %btn-round-box;
-    text-align: center;
-}
+//
+// [class^="grid__col--"].theme__colors {
+//     @extend %btn-round-box;
+//     text-align: center;
+// }
