@@ -1,22 +1,28 @@
 // ========================================
 // GRID IMPORTS
 // ========================================
-@include mq(middle) {
-    .grid__row {
-        @include flexy($justify: space-between);
-    }
-    @for $i from 1 through $g-col-count {
-        $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
-        $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
 
-        .grid__col--#{$i} {
-            width: percentage($target / $context);
+.grid {
+    @include mq(middle) {
+        &__row {
+            @include flexy($justify: space-between);
+        }
+        @for $i from 1 through $g-col-count {
+            $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
+            $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+
+            &__col--#{$i} {
+                width: percentage($target / $context);
+            }
         }
     }
-};
+}
+// the following style display the overall styling for the gird, not the size in flex;
 
-[class^="grid__col--"] {
-    margin-bottom: 1em;
+[class^="grid__col--"].theme__colors {
+    @extend %btn-round-box;
+    background-color: $color-primary;
+    text-align: center;
 }
 
 .grid__row {
