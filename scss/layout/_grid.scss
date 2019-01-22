@@ -5,17 +5,18 @@
 .grid {
     &__row {
         @include mq(small) {
-            margin-top: 2em;
-            margin-bottom: 2em;
+            margin: 1em;
         }
         @include mq(middle) {
             margin-top: 2em;
-            margin-bottom: 3em;
+            margin-bottom: 2em;
         }
     }
     @at-root [class^="grid__col"] {
         @extend %btn-round-box;
+        
     }
+
     @include mq(middle) {
         &__row {
             @include flexy($justify: space-around);

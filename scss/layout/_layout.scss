@@ -1,10 +1,7 @@
+.centered,
 .container {
-    @include center-container;
+    margin: 0 auto;
     @include mq(middle) {
         max-width: 1024px;
     };
-    // @include flexy(column, $align: stretch);
-}
-.centered {
-    margin: 0 auto;
 }
