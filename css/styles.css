@@ -484,6 +484,13 @@ ul {
     margin-bottom: 2em;
   }
 }
+.grid__col--12 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 @media only screen and (min-width: 769px) {
   .grid__row {
     display: flex;
@@ -554,7 +561,6 @@ ul {
 }
 
 [class^=btn--], .form__input, .nav__item a, [class^=grid__col] {
-  display: block;
   padding: 1em;
   margin-bottom: 1em;
   border: none;
@@ -586,6 +592,7 @@ ul {
   }
 }
 .nav__item a {
+  display: block;
   color: #000;
   text-align: center;
   text-decoration: none;
