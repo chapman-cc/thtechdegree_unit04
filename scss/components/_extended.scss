@@ -25,10 +25,11 @@
     color: $silver;
     font-weight: normal;
     margin-left: 0.5em;
-}; // ------ Nav items
+};
+// ------ Nav items
 
 %btn-round-box {
-    display: inline-block;
+    display: block;
     padding: em(16px);
     margin-bottom: 1em;
     border: none;

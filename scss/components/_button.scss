@@ -10,6 +10,13 @@
         width: 100%;
     }
     @include mq(middle) {
-        min-width: em(200px)
+        display: inline-block;
+        padding
+
+        //button in form takes all width
+        form & {
+            display: block;
+            width: 100%
+        }
     };
 };
