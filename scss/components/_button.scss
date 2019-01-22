@@ -6,7 +6,7 @@ BUTTONS
 .theme__colors {
     @each $theme, $color in $themes {
         &.btn--#{$theme} {
-            @extend %btn;
+            @extend %round-box-btn;
             background-color: $color;
         }
     }
