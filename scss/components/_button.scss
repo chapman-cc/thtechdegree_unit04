@@ -6,6 +6,12 @@
     @extend %btn-round-box;
     color: $white;
     text-transform: uppercase;
+    @include mq(small) {
+        width: 100%;
+    }
+    @include mq(middle) {
+
+    };
 };
 
 // this set each .btn-- class to the theme they associate with in $themes map
@@ -14,3 +20,8 @@
         background-color: $color;
     }
 }
+//     .grid__col--#{$i} {
+//         @extend %btn-round-box;
+//         // background-color:
+//     }
+// }

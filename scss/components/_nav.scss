@@ -3,17 +3,20 @@
 // -------------------------------------------
 
 .nav {
-    &__item a{
+    &__item a {
         @extend %btn-round-box;
         color: $black;
-
         text-align: center;
         text-decoration: none;
         font-weight: bold;
+
         &:hover {
             color: $white;
             font-weight: bold;
             background-color: $color-primary;
         }
+        @include mq(small) {
+            width: 100%;
+        };
     }
 }

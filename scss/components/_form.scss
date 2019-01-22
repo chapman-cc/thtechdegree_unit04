@@ -10,6 +10,7 @@
 
     &__input {
         @extend %btn-round-box;
+        width: 100%;
         border-bottom: 0.5em solid $color-primary;
         padding-left: 1em;
         padding-right: 1em;
