@@ -4,37 +4,29 @@
 
 .grid {
     &__row {
-        margin-top: 2em;
-        margin-bottom: 2em;
+        @include mq(small) {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+        @include mq(middle) {
+            margin-top: 2em;
+            margin-bottom: 3em;
+        }
     }
-    @at-root [class^="grid__col"].theme__colors {
+    @at-root [class^="grid__col"] {
         @extend %btn-round-box;
-        text-align: center;
     }
-
     @include mq(middle) {
         &__row {
-            @include flexy($justify: space-between);
+            @include flexy($justify: space-around);
         }
         @for $i from 1 through $g-col-count {
-            @if $i == $g-col-count {
-                &__col--#{$i} {
-                    width: 100%;
-                }
-            } @else {
-                $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
-                $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+            $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
+            $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
 
-                &__col--#{$i} {
-                    width: percentage($target / $context);
-                }
+            &__col--#{$i} {
+                width: percentage($target / $context);
             }
         }
     }
 }
-// the following style display the overall styling for the gird, not the size in flex;
-//
-// [class^="grid__col--"].theme__colors {
-//     @extend %btn-round-box;
-//     text-align: center;
-// }
