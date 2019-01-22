@@ -1,6 +1,5 @@
 // -------------------------------------------
-PLACEHOLDERS
-// -------------------------------------------
+// PLACEHOLDERS
 // ------ Links
 
 %link {
@@ -26,17 +25,16 @@ PLACEHOLDERS
     color: $silver;
     font-weight: normal;
     margin-left: 0.5em;
-};
-// ------ Nav items
+}; // ------ Nav items
 
 %round-box-btn {
-    display: inline-block;
-    width: 100%;
-    padding: 1em 0;
+    display: block;
+    height: 2em;
     margin-bottom: 1em;
-    color: $white;
-    font-size: 0.8em;
-    text-transform: uppercase;
     border: none;
     border-radius: 5px;
 }
+// padding: 1em 0;
+// color: $white;
+// font-size: 0.8em;
+// text-transform: uppercase;
