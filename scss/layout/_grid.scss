@@ -14,7 +14,10 @@
     }
     @at-root [class^="grid__col"] {
         @extend %btn-round-box;
-        
+
+    }
+    &__col--12 {
+        @include flexy($justify: space-around);
     }
 
     @include mq(middle) {
