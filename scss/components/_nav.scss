@@ -15,11 +15,11 @@
 
         &:hover {
             color: $white;
-            font-weight: bold;
             background-color: $color-primary;
         }
-        @include mq(small) {
-            width: 100%;
-        };
+        @include mq(middle) {
+            display: inline-block;
+            font-weight: normal;
+        }
     }
 }
