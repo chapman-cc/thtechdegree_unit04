@@ -8,5 +8,6 @@
     }
     .grid__col--#{$theme}.theme__colors {
         background-color: $color;
+        text-align: center;
     }
 }
