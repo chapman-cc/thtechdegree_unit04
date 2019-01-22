@@ -1,15 +1,16 @@
 // -------------------------------------------
 // BUTTONS
 // -------------------------------------------
-// this set each .btn-- class to the theme they associate with in $themes map
 
-.theme__colors {
-    @each $theme, $color in $themes {
-        &.btn--#{$theme} {
-            @extend %round-box-btn;
-            background-color: $color;
-        }
+[class^="btn--"] {
+    @extend %btn-round-box;
+    color: $white;
+    text-transform: uppercase;
+};
+
+// this set each .btn-- class to the theme they associate with in $themes map
+@each $theme, $color in $themes {
+    .btn--#{$theme}.theme__colors {
+        background-color: $color;
     }
 }
-
-.theme__colors {}
