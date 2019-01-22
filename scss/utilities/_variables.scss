@@ -21,7 +21,19 @@ $themes: (
     success: $emerald,
       error: $sunglo,
     warning: $coral,
-       info: $purple-mountain-majesty
+       info: $purple-mountain-majesty,
+          1: lighten($cornflower-blue, 10%),
+          2: darken($emerald, 10%),
+          3: desaturate($sunglo, 10%),
+          4: lighten($coral, 10%),
+          5: darken($purple-mountain-majesty, 10%),
+          6: desaturate($cornflower-blue, 10%),
+          7: lighten($emerald, 10%),
+          8: darken($sunglo, 10%),
+          9: desaturate($coral, 10%),
+         10: lighten($purple-mountain-majesty, 10%),
+         11: darken($cornflower-blue, 10%),
+         12: desaturate($emerald, 10%),
 );
 
 

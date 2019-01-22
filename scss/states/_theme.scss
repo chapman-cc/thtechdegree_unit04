@@ -1,0 +1,12 @@
+// -------------------------------------------
+// Themeing
+// -------------------------------------------
+// this set each .btn-- class to the theme they associate with in $themes map
+@each $theme, $color in $themes {
+    .btn--#{$theme}.theme__colors {
+        background-color: $color;
+    }
+    .grid__col--#{$theme}.theme__colors {
+        background-color: $color;
+    }
+}
