@@ -560,7 +560,7 @@ ul {
   margin-left: 0.5em;
 }
 
-[class^=btn--], .form__input, .nav__item a, [class^=grid__col] {
+[class^=btn], .form__input, .nav__item a, [class^=grid__col] {
   padding: 1em;
   margin-bottom: 1em;
   border: none;
@@ -631,20 +631,20 @@ ul {
   box-shadow: 0 0 0.5px #C0C0C0;
 }
 
-[class^=btn--] {
+[class^=btn] {
   color: #fff;
   text-transform: uppercase;
 }
 @media only screen and (max-width: 768px) {
-  [class^=btn--] {
+  [class^=btn] {
     width: 100%;
   }
 }
 @media only screen and (min-width: 769px) {
-  [class^=btn--] {
+  [class^=btn] {
     display: inline-block;
   }
-  form [class^=btn--] {
+  form [class^=btn] {
     display: block;
     width: 100%;
   }

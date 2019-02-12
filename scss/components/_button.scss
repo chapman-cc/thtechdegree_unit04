@@ -2,7 +2,7 @@
 // BUTTONS
 // -------------------------------------------
 
-[class^="btn--"] {
+[class^="btn"] {
     @extend %btn-round-box;
     color: $white;
     text-transform: uppercase;

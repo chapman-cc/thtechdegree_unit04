@@ -2,12 +2,12 @@
 // TEXT Styling
 // -------------------------------------------
 
-.headline-- {
-    &primary {
+.headline {
+    &--primary {
         @extend %hdln-prim;
     }
 
-    &secondary {
+    &--secondary {
         @extend %hdln-sec;
     }
 }
